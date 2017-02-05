@@ -1,0 +1,40 @@
+﻿<!doctype html>
+
+<html ng-app="app">
+<head>
+    <meta name=viewport content="width=960">
+
+    <title>Corrina Black</title>
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="http://resources.windowsphone.com/FontService/en-us/SegoeWPC_V052920121144_Apollo_DevPortal/Font.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:700" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/css.css" />
+
+    <!-- ANGULAR LIBRARIES -->
+    <script src="http://code.angularjs.org/1.4.8/angular.js"></script>
+    <script src="http://code.angularjs.org/1.4.8/angular-animate.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <!-- ANGULAR APP MODULES -->
+    <script src="/scripts/app.js"></script>
+
+    <!-- JQUERY LIBRARIES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- START: HEADER -->
+    <div class="New_MainNav" autoscroll="false" header-template></div>
+    <!-- END: HEADER -->
+
+    <!-- START: BODY -->
+    <div ui-view autoscroll="false"></div>
+    <!-- END: BODY -->
+
+    <!-- START: FOOTER -->
+    <div autoscroll="false" footer-template></div>
+    <!-- END: FOOTER -->
+</body>
+</html>

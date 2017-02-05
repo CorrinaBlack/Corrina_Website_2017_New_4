@@ -1,0 +1,513 @@
+
+/******************************************************************************************************************************/
+/* BASE ELEMENTS **************************************************************************************************************/
+html 
+    {
+        overflow-y: scroll; 
+	    min-width: 840px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background: #fff;
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%; 
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }
+body, button, input, select, textarea 
+    {
+	    min-width: 840px;
+        line-height: 1.2;
+    }
+a
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+    }
+img 
+    {
+        border: 0; 
+        -ms-interpolation-mode: bicubic; 
+        vertical-align: middle; 
+    }
+
+/******************************************************************************************************************************/
+/* NAVIGATIONAL ELEMENTS: CORE*************************************************************************************************/
+.Links
+    {
+        color: #333;
+        -webkit-transition: color .2s, cursor .1s;
+        transition: color .2s, cursor .1s;
+    }
+.Links:hover
+    {
+        color: #aaa;
+        cursor: pointer;
+    }
+#Links
+    {
+        color: #333;
+        -webkit-transition: color .2s, cursor .1s;
+        transition: color .2s, cursor .1s;
+    }
+#Links:hover
+    {
+        color: #aaa;
+        cursor: pointer;
+    }
+.LinksA
+    { 
+        text-align: right;
+        color:#000;
+        -webkit-transition: color .2s, cursor .1s;
+        transition: color .2s, cursor .1s;
+    }
+.LinksA:hover
+    { 
+        color: #aaa;
+        cursor: pointer;
+    }
+.Links2
+    {
+        color: #333;
+        -webkit-transition: opacity .2s, cursor .1s;
+        transition: opacity .2s, cursor .1s;
+    }
+.Links2:hover
+    {
+        opacity: .5;
+        cursor: pointer;
+    }
+
+
+/******************************************************************************************************************************/
+/* NAVIGATION: HEADER**********************************************************************************************************/
+.New_MainNav
+    {
+	    position: relative;
+        z-index: 4;
+	    width: 840px;
+        height: 220px;
+	    margin: auto;
+        background-color: #fff;
+        overflow: hidden;
+    }
+.HeaderContainer
+    {
+	    margin-left: -60px; 
+        height: 220px;
+        overflow: hidden; 
+    }
+#MainNavLinks
+    {
+        position: relative;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 10pt; 
+        color: #000;
+        padding: 10px;
+        -ms-transform: rotate(180deg);      /* IE 9 ***************************************************************************/
+        -webkit-transform: rotate(180deg);  /* CHROME, SAFARI, OPERA **********************************************************/
+        transform: rotate(180deg);
+    }
+.New_Line_Top
+    {
+        position:relative; 
+        width: 200px; 
+        height: 89px;
+        background-color: #fff;
+    }
+.NavLine
+    {
+        border-top: dotted 2px #000; 
+        width: 240px; 
+        height: 1px; 
+        padding-bottom: 6px;
+    }
+.RotateNav
+    {
+        -ms-transform: rotate(90deg);       /* IE 9 ***************************************************************************/
+        -webkit-transform: rotate(90deg);  /* CHROME, SAFARI, OPERA ***********************************************************/
+        transform: rotate(90deg);
+    }
+
+
+/******************************************************************************************************************************/
+/* NAVIGATION: SUBHEADER*******************************************************************************************************/
+.MainSubHeader
+    {
+	    position: relative;
+        z-index: 5;
+        width: 840px;
+        margin: auto;
+        background-color: #fff;
+    }
+#Sub_Navigation_A
+    {
+        position: fixed;
+        z-index: 5; 
+        top: 165px; 
+        margin: auto;
+        margin-left: -115px;
+        width: 40px; 
+        opacity: 0;
+        background-color: #fff;
+    }
+.New_BodyText_Details_AA
+    {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 9pt; 
+        line-height: 1.1;
+        color: #333;
+        padding: 18px;
+        padding-left: 10px;
+        border-bottom: dotted 2px #666;
+    }
+.New_BodyText_Details_A
+    {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 9pt; 
+        line-height: 1.1;
+        color: #333;
+        padding: 18px;
+        border-bottom: dotted 2px #666;
+    }
+.New_BodyText_Details_A_Bottom
+    {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 9pt; 
+        line-height: 1.1;
+        color: #333;
+        padding: 18px;
+    }
+#Sub_Navigation_B
+    {
+        position: fixed;
+        z-index: 5; 
+        top: 0px; 
+        margin: auto;
+        margin-left: -60px; 
+        margin-right: -60px; 
+        height: 69px; 
+        width: 100%; 
+        background-color: #fff;
+        display: none;
+        opacity: 0;
+    }
+.Sub_Navigation_Container_B
+    {
+        position: relative; 
+        z-index: 5;
+        margin: auto; 
+        height: 69px; 
+        width: 840px; 
+        background-color: #fff; 
+        border-bottom: dotted 2px #666;
+        overflow: hidden;
+    }
+.New_BodyText_GoToTop_B
+    {
+        position: relative;
+        z-index: 5;
+        float: left;
+        margin: 29px auto;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 9pt; 
+        line-height: 1.1;
+        color: #333;
+    }
+.New_BodyText_Details_B
+    {
+        position: relative;
+        z-index: 5;
+        float: right;
+        margin: 23px auto;
+        margin-left: 8px;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 9pt; 
+        line-height: 1.1;
+        color: #333;
+        padding: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+.New_BodyText_Details_2_B
+    {
+        position: relative;
+        float: right;
+        margin: 29px auto;
+        margin-right: 10px;
+        font-family: Segoe UI SemiBold, sans-serif;
+        font-size: 9pt; 
+        line-height: 1.1;
+        color: #333;
+    }
+.New_Line_Top_2
+    {                  
+        opacity: 1;                         /* SET TO 0 IF USING SUBNAVB ELSE 1********************************************/
+        position:relative; 
+        z-index: 2;
+        float: left; 
+        margin-top: 16px;                   /* SET TO MARGIN-TOP: -50PX IF USING SUBNAVA ELSE -24PX************************/
+        margin-bottom: 40px;
+        width: 840px; 
+        height: 1px; 
+        border-bottom: dotted 1px #666;
+    }
+.New_Line_Top_2A
+    {                  
+        opacity: 1;                         /* SET TO 0 IF USING SUBNAVB ELSE 1********************************************/
+        position:relative; 
+        float: left; 
+        z-index: 2;
+        margin-top: 16px;                   /* SET TO MARGIN-TOP: -50PX IF USING SUBNAVA ELSE -24PX************************/
+        margin-bottom: 0px;
+        width: 840px; 
+        height: 1px; 
+        border-bottom: dotted 1px #666;
+    }
+.Line0
+    {
+        opacity: 1;                         /* SET TO 0 IF USING SUBNAVA ELSE 1********************************************/
+        position:relative;
+        z-index: 2;
+        margin-top: 26px;                   /* SET TO MARGIN-TOP: 6PX 0 IF USING SUBNAVA ELSE 6PX**************************/
+        margin-bottom: 40px;
+        float: left; 
+        width: 840px; 
+        height: 1px; 
+        border-bottom: dotted 1px #555;
+    }
+@media only screen and (max-width: 1250px)  /* TESTING OUT RESPONSIVE UX HERE - SIMPLE BUT INTERESTING*************************/
+    {
+    #Sub_Navigation_A
+        {
+            position: fixed;
+            z-index: 5; 
+            top: 165px; 
+            margin: auto;
+            margin-left: -115px;
+            width: 40px; 
+            background-color: #fff;
+            display: none;
+            opacity: 0;
+        }
+    #Sub_Navigation_B
+        {
+            position: fixed;
+            z-index: 5; 
+            top: 0px; 
+            margin: auto;
+            height: 69px; 
+            width: 840px; 
+            background-color: #fff;
+            display: block;
+            opacity: 0;
+        }
+    }
+
+
+/******************************************************************************************************************************/
+/* NAVIGATION: FOOTER**********************************************************************************************************/
+.MainFooter
+    {
+	    position: relative;
+        z-index: 4;
+        width: 840px;
+        height: 72px; 
+        margin: auto;
+        background-color: #fff;
+        overflow: hidden;
+    }
+.New_Line_Bottom
+    {
+        position: relative; 
+        width: 100%; 
+        height: 1px; 
+        border-bottom: dotted 2px #666;
+    }
+.FooterCopyright 
+    {
+        position: relative; 
+        float: left; 
+        width: 130px; 
+        margin-top: 31px; 
+        font-family: Segoe UI Bold, sans-serif; 
+        font-size: 8pt; 
+        color: #333;
+    }
+.FooterImgGroup 
+    {
+        position: relative; 
+        float: right; 
+        width: 700px; 
+        margin-top: 25px; 
+    }
+.FooterLinks
+    {
+        text-decoration: none; 
+        float: right;
+    }
+
+
+/******************************************************************************************************************************/
+/* PAGE: ELEMENTS**************************************************************************************************************/
+.MainBody
+    {
+	    position: relative;
+        z-index: 4;
+        width: 840px;
+        height: 642px;
+        margin: auto;
+        background-color: #fff;
+        overflow: hidden;
+    }
+.MainBody2
+    {
+	    position: relative;
+        z-index: 4;
+        width: 840px;
+        height: 722px;
+        margin: auto;
+        background-color: #fff;
+        overflow: hidden;
+    }
+.MainBody_Aa
+    {
+	    position: relative; 
+        width: 840px; 
+        height: 610px; 
+    }
+#MainBodyAccelerator
+    {
+	    position: relative; 
+        width: 840px;
+        margin: auto;
+        overflow: hidden;
+    }
+.MainBodyInside
+    {
+	    position: relative; 
+        width: 840px;
+        margin: auto;
+        overflow: hidden;
+    }
+.New_Column_1
+    {
+	    position: relative;
+        z-index: 2;
+        margin: auto;
+    }
+.New_Column_2
+    {
+	    position: absolute;
+        z-index: 2;
+        float: left;
+        margin: 35px auto auto auto;
+	    width: 560px;
+    }
+.MainImgCorrina
+    {
+        position: relative;  
+        height: 614px; 
+        width: 647px; 
+        float: right; 
+        clear: right;
+        margin-right: -54px;
+        margin-top: 144px;
+	    background-image: url('../images/space.png');
+    }
+.MainImg
+    {
+        position: relative;  
+        height: 642px; 
+        width: 647px; 
+        float: right; 
+        clear: right; 
+        margin-top: 38px;
+        margin-right: -80px;
+	    background-image: url('../images/space.png');
+    }
+.BodyImgs
+    {
+        margin-left: 20px; 
+        margin-right: 20px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+.BodyImgs2
+    {
+        margin-left: 20px; 
+        margin-right: 20px;
+        margin-top: -30px;
+        margin-bottom: 90px;
+    }
+.New_BodyText_Header
+    {
+        margin-top: 6px;
+        margin-bottom: 32px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 51px; 
+        line-height: 1.1;
+        letter-spacing: -2px;
+        color: #333;
+    }
+.New_BodyText_Header2
+    {
+        margin-top: 40px;
+        margin-bottom: -2px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14pt; 
+        line-height: 1.1;
+        color: #333;
+    }
+.New_BodyText 
+    { 
+        font-family: Segoe UI, sans-serif;
+        font-size: 11pt; 
+        line-height: 1.5;
+        color: #333;
+    }
+.New_BodyText2
+    { 
+        font-family: Segoe UI, sans-serif;
+        margin-top: 8px;
+        font-size: 11pt; 
+        line-height: 1.5;
+        color: #333;
+    }
+.BodyText1
+    {
+        font-family: Segoe UI SemiLight, sans-serif;
+        font-size: 10pt; 
+        line-height: 1.25;
+        color: #333;
+        margin-top: 20px;
+    }
+.ResizableImg
+    {
+        width: 100%;
+        height: 100%;
+    }
+.ResizableBGgmg
+    {
+        width: 88%;
+        height: 88%;
+    }
+.ResizableBGgmg2
+    {
+        width: 94%;
+        height: 94%;
+    }
