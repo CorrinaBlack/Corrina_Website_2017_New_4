@@ -1,6 +1,6 @@
 //*******************************************************************************************************
 // BASE APP MODULE - DESIGN INSPIRATION http://productdisrupt.com/ **************************************
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router', 'ngAnimate']);
 
 //*******************************************************************************************************
 // APP CONFIGURATION ************************************************************************************
@@ -56,6 +56,16 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         })
 });
 
+//*******************************************************************************************************
+// CURRENT STATE - http://jasonwatmore.com/post/2016/01/20/angular-nganimate-tutorial-with-ui-router ****
+// ************* - https://css-tricks.com/animations-the-angular-way/ ***********************************
+// ADD ng-class="{active: currentState.match('^MicrosoftAccelerator')}" TO CONTAINER FOR UI-SREF*********
+// ADD .ng-enter { transition: .5s; opacity: 0; } .ng-enter-active { opacity: 1; } TO CSS ***************
+app.run(function ($rootScope) {
+        $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+            $rootScope.currentState = toState.name;  // used for page transition animation to track state
+        });
+});
 
 //*******************************************************************************************************
 // ACCELERATOR TEMPLATES - https://plnkr.co/edit/?p=preview *********************************************
@@ -91,44 +101,36 @@ app.directive('footerTemplate', function () {
 });
 
 //*******************************************************************************************************
-// CONTROLLERS ******************************************************************************************
+// CONTROLLERS TO INSERT SCRIPT AT END OF BODY FOR EACH PAGE ********************************************
 app.controller('acceleratorController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('phoneController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('centerController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('toolsController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('embeddedController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('riaController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('vsController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('freeformController', function ($scope) {
-    // INSERTS SCRIPT AT END OF BODY
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
