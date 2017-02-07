@@ -379,7 +379,7 @@ img
 	    position: relative;
         z-index: 4;
         width: 840px;
-        height: 722px;
+        height: 780px;
         margin: auto;
         background-color: #fff;
         overflow: hidden;
@@ -426,7 +426,7 @@ img
         float: right; 
         clear: right;
         margin-right: -54px;
-        margin-top: 144px;
+        margin-top: 202px;
 	    background-image: url('../images/space.png');
     }
 .MainImg
@@ -478,7 +478,7 @@ img
         font-family: Segoe UI, sans-serif;
         font-size: 11pt; 
         line-height: 1.5;
-        color: #333;
+        color: #666;
     }
 .New_BodyText2
     { 
@@ -486,7 +486,7 @@ img
         margin-top: 8px;
         font-size: 11pt; 
         line-height: 1.5;
-        color: #333;
+        color: #666;
     }
 .BodyText1
     {
