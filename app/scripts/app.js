@@ -7,11 +7,11 @@ var app = angular.module('app', ['ui.router', 'ngAnimate']);
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // ROUTE DETAILS ******************************************************************
-    $urlRouterProvider.otherwise('/AboutMe');
+    $urlRouterProvider.otherwise('/AboutCorrinaBlack');
 
     $stateProvider
-        .state('AboutMe', {
-            url: '/AboutMe',
+        .state('AboutCorrinaBlack', {
+            url: '/AboutCorrinaBlack',
             templateUrl: '/partials/about.html'
         })
         .state('MicrosoftAccelerator', {
@@ -33,11 +33,6 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/PhoneDevTools',
             templateUrl: '/partials/tools.html',
             controller: 'toolsController'
-        })
-        .state('SilverlightEmbedded', {
-            url: '/SilverlightEmbedded',
-            templateUrl: '/partials/embedded.html',
-            controller: 'embeddedController'
         })
         .state('SilverlightRIA', {
             url: '/SilverlightRIA',
@@ -115,10 +110,6 @@ app.controller('centerController', function ($scope) {
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
 app.controller('toolsController', function ($scope) {
-    $scope.sourceUrl = '/scripts/niceScroll_Script.js';
-    $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
-});
-app.controller('embeddedController', function ($scope) {
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });

@@ -98,9 +98,10 @@ img
     }
 .HeaderContainer
     {
-	    margin-left: -60px; 
+	    margin-left: 30px;
+        margin-top: -34px;
+	    width: 840px;
         height: 220px;
-        overflow: hidden; 
     }
 #MainNavLinks
     {
@@ -109,6 +110,7 @@ img
         font-size: 10pt; 
         color: #000;
         padding: 10px;
+        height: 80px;
         -ms-transform: rotate(180deg);      /* IE 9 ***************************************************************************/
         -webkit-transform: rotate(180deg);  /* CHROME, SAFARI, OPERA **********************************************************/
         transform: rotate(180deg);
@@ -117,13 +119,13 @@ img
     {
         position:relative; 
         width: 200px; 
-        height: 89px;
+        height: 90px;
         background-color: #fff;
     }
 .NavLine
     {
         border-top: dotted 2px #000; 
-        width: 240px; 
+        width: 190px; 
         height: 1px; 
         padding-bottom: 6px;
     }
