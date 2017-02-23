@@ -19,6 +19,11 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: '/partials/accelerator.html',
             controller: 'acceleratorController'
         })
+        .state('MicrosoftIOT', {
+            url: '/MicrosoftIOT',
+            templateUrl: '/partials/IOT.html',
+            controller: 'iotController'
+        })
         .state('WindowsPhone', {
             url: '/WindowsPhone',
             templateUrl: '/partials/phone.html',
@@ -74,6 +79,11 @@ app.directive('subheader1Template', function () {
         templateUrl: '/partials/subheader_1.html'
     };
 });
+app.directive('subheader3Template', function () {
+    return {
+        templateUrl: '/partials/subheader_3.html'
+    };
+});
 app.directive('subheader5Template', function () {
     return {
         templateUrl: '/partials/subheader_5.html'
@@ -98,6 +108,10 @@ app.directive('footerTemplate', function () {
 //*******************************************************************************************************
 // CONTROLLERS TO INSERT SCRIPT AT END OF BODY FOR EACH PAGE ********************************************
 app.controller('acceleratorController', function ($scope) {
+    $scope.sourceUrl = '/scripts/niceScroll_Script.js';
+    $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
+});
+app.controller('iotController', function ($scope) {
     $scope.sourceUrl = '/scripts/niceScroll_Script.js';
     $("<script>").attr({ src: $scope.sourceUrl }).appendTo("body");
 });
