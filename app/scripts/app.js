@@ -94,11 +94,6 @@ app.directive('subheader6Template', function () {
         templateUrl: '/partials/subheader_6.html'
     };
 });
-app.directive('subheaderalt6Template', function () {
-    return {
-        templateUrl: '/partials/subheader_6_alt.html'
-    };
-});
 app.directive('footerTemplate', function () {
     return {
         templateUrl: '/partials/footer.html'
