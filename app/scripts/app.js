@@ -7,50 +7,50 @@ var app = angular.module('app', ['ui.router', 'ngAnimate']);
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // ROUTE DETAILS ******************************************************************
-    $urlRouterProvider.otherwise('/AboutCorrinaBlack');
+    $urlRouterProvider.otherwise('/about_corrina_black');
 
     $stateProvider
         .state('AboutCorrinaBlack', {
-            url: '/AboutCorrinaBlack',
+            url: '/about_corrina_black',
             templateUrl: '/partials/about.html'
         })
         .state('MicrosoftAccelerator', {
-            url: '/MicrosoftAccelerator',
+            url: '/microsoft_accelerator',
             templateUrl: '/partials/accelerator.html',
             controller: 'acceleratorController'
         })
         .state('MicrosoftIOT', {
-            url: '/MicrosoftIOT',
+            url: '/microsoft_iot',
             templateUrl: '/partials/IOT.html',
             controller: 'iotController'
         })
         .state('WindowsPhone', {
-            url: '/WindowsPhone',
+            url: '/windows_phone',
             templateUrl: '/partials/phone.html',
             controller: 'phoneController'
         })
         .state('PhoneDevCenter', {
-            url: '/PhoneDevCenter',
+            url: '/windows_phone_dev_center',
             templateUrl: '/partials/center.html',
             controller: 'centerController'
         })
         .state('PhoneDevTools', {
-            url: '/PhoneDevTools',
+            url: '/windows_phone_dev_tools',
             templateUrl: '/partials/tools.html',
             controller: 'toolsController'
         })
         .state('SilverlightRIA', {
-            url: '/SilverlightRIA',
+            url: '/silverlight_ria_platform',
             templateUrl: '/partials/ria.html',
             controller: 'riaController'
         })
         .state('VisualStudio', {
-            url: '/VisualStudio',
+            url: '/visual_studio',
             templateUrl: '/partials/vs.html',
             controller: 'vsController'
         })
         .state('DesignCodeSpeaking', {
-            url: '/DesignCodeSpeaking',
+            url: '/itinerant_creative_pursuits',
             templateUrl: '/partials/freeform.html',
             controller: 'freeformController'
         })
