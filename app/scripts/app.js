@@ -50,7 +50,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: 'vsController'
         })
         .state('DesignCodeSpeaking', {
-            url: '/itinerant_creative_pursuits',
+            url: '/creative_pursuits',
             templateUrl: '/partials/freeform.html',
             controller: 'freeformController'
         })
